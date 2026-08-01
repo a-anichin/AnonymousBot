@@ -1,6 +1,11 @@
 import logging
+import os
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
+
+# ========== ЧИТАЕМ ПЕРЕМЕННЫЕ ОКРУЖЕНИЯ ==========
+BOT_TOKEN = os.getenv('BOT_TOKEN')
+GROUP_CHAT_ID = os.getenv('GROUP_CHAT_ID')
 
 # ========== НАСТРОЙКА ЛОГИРОВАНИЯ ==========
 logging.basicConfig(
