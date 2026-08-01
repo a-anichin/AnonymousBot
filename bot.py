@@ -2,10 +2,6 @@ import logging
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 
-# ========== НАСТРОЙКИ (ЗАМЕНИТЕ НА СВОИ ЗНАЧЕНИЯ) ==========
-BOT_TOKEN = "8626144739:AAEyAtznr5u-H-hmM1A_ExlrmXJP3bcAeg0"  # СВОЙ ТОКЕН
-GROUP_CHAT_ID = -5321350905  # СВОЙ ID ГРУППЫ
-
 # ========== НАСТРОЙКА ЛОГИРОВАНИЯ ==========
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
